@@ -50,6 +50,14 @@ def handle_message(event):
     elif message_text == '@預約服務':
         service_category_event(event)
 
+    elif message_text.startswith('*'):
+        if event.source.user_id not in[]:
+            return
+        if message_text in ['*data','*d']:
+            list_reservation_event(event)
+        elif message_text in ['*group','*g']:
+            crate_audience_group(event)
+
 @handler.add(PostbackEvent)
 def handle_postback(event):
     data = dict(parse_qsl(event.postback.data))

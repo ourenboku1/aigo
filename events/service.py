@@ -1,5 +1,11 @@
 from line_bot_api import *
 from urllib.parse import parse_qsl
+import datetime
+
+from extensions import db
+from models.user import User
+from models.reservation import Reservation
+
 
 
 services = {

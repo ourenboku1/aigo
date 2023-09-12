@@ -15,14 +15,14 @@ def about_us_event(event):
         }
     ]
 
-    text_message = TextSendMessage(text='''$ Master SPA $
-專業中醫推拿出身，融合東西方按摩手法
+    text_message = TextSendMessage(text='''$ 寶石服飾 $
+專業設計師出身，融合東西方文化元素
 
--嚴格把關：所有用品皆有消毒或採一次用品。
+-嚴格把關：所有用品皆為高級布料製作。
 
--設備齊全：夏天有冷氣，冬天有電毯和暖氣。
+-設備齊全：夏天有冷氣，冬天有暖氣。
 
--獨立空間：專業乾淨高品質獨立按摩空間。''', emojis=emoji)
+-獨立空間：專業乾淨高品質獨立換裝空間。''', emojis=emoji)
 
     sticker_message = StickerSendMessage(
         package_id='8522',
@@ -43,10 +43,10 @@ def about_us_event(event):
 
 def location_event(event):
     location_message = LocationSendMessage(
-        title='Master SPA',
-        address='110台北市信義區信義路五段7號',
-        latitude=25.0333695,
-        longitude=121.5638839
+        title='寶石服飾',
+        address='高雄市做營區裕誠路XXX號',
+        latitude=22.63539983180636,
+        longitude=120.5638839
     )
 
     line_bot_api.reply_message(
